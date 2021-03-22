@@ -61,3 +61,42 @@
 .profileScreen__info > img {
     height: 100px;
 }
+
+
+@media only screen and (max-width: 800px) {
+    .profileScreen__body {
+        width: 80%;
+    }
+    .profileScreen__body > h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profileScreen__body {
+        width: 90%;
+        padding-top: 16%;
+    }
+    .profileScreen__body > h1 {
+        font-size: 28px;
+    }
+    .profileScreen__info > img {
+        height: 50px;
+    }
+    .profileScreen__details > h2 {
+        padding: 6px;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .profileScreen__plans > h3 {
+        font-size: 16px;
+        border-bottom: 1px solid #282c2d;
+        padding-bottom: 10px;
+    }
+    .profileScreen__signOut {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        margin-top: 5%;
+        font-weight: 600;
+    }
+}

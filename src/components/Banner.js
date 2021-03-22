@@ -21,7 +21,7 @@ function Banner() {
     }, [])
 
     function truncate(string, n) {
-        return string ?.length > n ? string.substr(0, n - 1) + '...' : string;
+        return string?.length > n ? string.substr(0, n - 1) + '...' : string;
     }
 
     return (
@@ -34,8 +34,8 @@ function Banner() {
             <div className="banner__contents">
                 <h1 className="banner__title">{movie.title || movie.name || movie.original_name}</h1>
                 <div className="banner__buttons">
-                    <button className='banner__button'>Play</button>
-                    <button className='banner__button'>My List</button>
+                    <button className='banner__button banner__buttonPlay'>Play</button>
+                    <button className='banner__button banner__buttonMyList'>My List</button>
                 </div>
                 <h1 className="banner__description">
                     {truncate(movie.overview, 150)}</h1>
